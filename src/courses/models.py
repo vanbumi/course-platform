@@ -19,12 +19,12 @@ class Coourse(models.Model):
     # image =
     access = models.CharField(
         max_length=10,
-        choices = AccessRequirement.choices
+        choices = AccessRequirement.choices,
         default = PublishStatus.DRAFT
     )
     status = models.CharField(
         max_length=10,
-        choices = PublishStatus.choices
+        choices = PublishStatus.choices,
         default = AccessRequirement.DRAFT
     )
 
